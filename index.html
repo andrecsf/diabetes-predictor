@@ -14,34 +14,42 @@
     <form>
         <label>Glicose
             <input type="number" id="glicose" min="0" max="300">
+            <span class="erro" id="erro_glicose"></span>
         </label>
 
         <label>Idade
             <input type="number" id="idade" min="1" max="120">
+            <span class="erro" id="erro_idade"></span>
         </label>
 
         <label>Pressão Arterial
             <input type="number" id="pressao_arterial" min="0" max="200">
+            <span class="erro" id="erro_pressao_arterial"></span>
         </label>
 
         <label>Gestações
             <input type="number" id="gestacoes" min="0" max="20">
+            <span class="erro" id="erro_gestacoes"></span>
         </label>
 
         <label>Espessura da Pele
             <input type="number" id="espessura_pele" min="0" max="100">
+            <span class="erro" id="erro_espessura_pele"></span>
         </label>
 
         <label>Insulina
             <input type="number" id="insulina" min="0" max="900">
+            <span class="erro" id="erro_insulina"></span>
         </label>
 
         <label>IMC
-            <input type="number" id="imc" min="0" max="70">
+            <input type="number" id="imc" min="0" max="70" step="any">
+            <span class="erro" id="erro_imc"></span>
         </label>
 
         <label>Histórico Familiar
-            <input type="number" id="historico_familiar" min="0" max="3">
+            <input type="number" id="historico_familiar" min="0" max="3" step="any">
+            <span class="erro" id="erro_historico_familiar"></span>
         </label>
 
         <button type="button" onclick="prever()">Resultado</button>

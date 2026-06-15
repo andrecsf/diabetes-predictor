@@ -57,3 +57,12 @@ button {
     font-size: 16px;
     margin-top: 8px;
 }
+
+.erro {
+    color: red;
+    font-size: 12px;
+}
+
+input.invalido {
+    border-color: red;
+}

@@ -101,14 +101,14 @@ Recebe os dados clínicos do paciente e retorna o resultado da predição.
 
 ```json
 {
-  "gestacoes": 2,
-  "glicose": 148,
-  "pressao_arterial": 72,
+  "gestacoes": 0,
+  "glicose": 137,
+  "pressao_arterial": 40,
   "espessura_pele": 35,
-  "insulina": 0,
-  "imc": 33.6,
-  "historico_familiar": 0.627,
-  "idade": 50
+  "insulina": 168,
+  "imc": 43.1,
+  "historico_familiar": 2.288,
+  "idade": 33
 }
 ```
 
@@ -117,7 +117,7 @@ Recebe os dados clínicos do paciente e retorna o resultado da predição.
 ```json
 {
   "resultado": 1,
-  "probabilidade": 0.87
+  "probabilidade": 0.84
 }
 ```
 

@@ -14,7 +14,7 @@ Projeto desenvolvido para a disciplina de Desenvolvimento Mobile — SENAC.
 | Caio Victor | — |
 | Leticia Gabrielle | — |
 | Luciana Borges | — |
-| Priscila Barbosa | — |
+| Priscila Barbosa | [Priscila319](https://github.com/Priscila319) |
 
 ---
 

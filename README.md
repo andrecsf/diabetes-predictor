@@ -12,7 +12,7 @@ Projeto desenvolvido para a disciplina de Desenvolvimento Mobile — SENAC.
 |---|---|
 | André Costa | [andrecsf](https://github.com/andrecsf) |
 | Caio Victor | — |
-| Leticia Gabrielle | — |
+| Leticia Gabrielle | [Leticia-dev07](https://github.com/Leticia-dev07) |
 | Luciana Borges | — |
 | Priscila Barbosa | [Priscila319](https://github.com/Priscila319) |
 

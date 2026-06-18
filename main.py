@@ -14,7 +14,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-model = joblib.load("modelo_diabetes_rf.pkl")  # ajuste o nome se necessário
+model = joblib.load("modelo_diabetes_rf.pkl")  
 
 class DadosPaciente(BaseModel):
     gestacoes: float = Field(..., ge=0, le=20)

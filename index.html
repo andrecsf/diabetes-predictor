@@ -9,52 +9,68 @@
 </head>
 
 <body>
-    <h1>Predição de Diabetes</h1>
-    <p>Insira os valores para prever a probabilidade de diabetes em pacientes mulheres:</p>
-    <form>
-        <label>Glicose
-            <input type="number" id="glicose" min="40" max="300">
-            <span class="erro" id="erro_glicose"></span>
-        </label>
+    <header>
+        <span class="badge">Diagnóstico assistido por ML</span>
+        <h1>Predição de Diabetes</h1>
+        <p>Insira os valores para prever a probabilidade de diabetes em pacientes mulheres</p>
+    </header>
 
-        <label>Idade
-            <input type="number" id="idade" min="1" max="120">
-            <span class="erro" id="erro_idade"></span>
-        </label>
+    <div class="card">
+        <form>
+            <label>Glicose
+                <input type="number" id="glicose" min="40" max="300">
+                <span class="hint">mg/dL</span>
+                <span class="erro" id="erro_glicose"></span>
+            </label>
 
-        <label>Pressão Arterial
-            <input type="number" id="pressao_arterial" min="40" max="200">
-            <span class="erro" id="erro_pressao_arterial"></span>
-        </label>
+            <label>Idade
+                <input type="number" id="idade" min="1" max="120">
+                <span class="hint">anos</span>
+                <span class="erro" id="erro_idade"></span>
+            </label>
 
-        <label>Gestações
-            <input type="number" id="gestacoes" min="0" max="20">
-            <span class="erro" id="erro_gestacoes"></span>
-        </label>
+            <label>Pressão Arterial
+                <input type="number" id="pressao_arterial" min="40" max="200">
+                <span class="hint">mmHg</span>
+                <span class="erro" id="erro_pressao_arterial"></span>
+            </label>
 
-        <label>Espessura da Pele
-            <input type="number" id="espessura_pele" min="5" max="100">
-            <span class="erro" id="erro_espessura_pele"></span>
-        </label>
+            <label>Gestações
+                <input type="number" id="gestacoes" min="0" max="20">
+                <span class="hint">número</span>
+                <span class="erro" id="erro_gestacoes"></span>
+            </label>
 
-        <label>Insulina
-            <input type="number" id="insulina" min="2" max="900">
-            <span class="erro" id="erro_insulina"></span>
-        </label>
+            <label>Espessura da Pele
+                <input type="number" id="espessura_pele" min="5" max="100">
+                <span class="hint">mm</span>
+                <span class="erro" id="erro_espessura_pele"></span>
+            </label>
 
-        <label>IMC
-            <input type="number" id="imc" min="15" max="70" step="any">
-            <span class="erro" id="erro_imc"></span>
-        </label>
+            <label>Insulina
+                <input type="number" id="insulina" min="2" max="900">
+                <span class="hint">μU/mL</span>
+                <span class="erro" id="erro_insulina"></span>
+            </label>
 
-        <label>Histórico Familiar
-            <input type="number" id="historico_familiar" min="0" max="3" step="any">
-            <span class="erro" id="erro_historico_familiar"></span>
-        </label>
+            <label>IMC
+                <input type="number" id="imc" min="15" max="70" step="any">
+                <span class="hint">kg/m²</span>
+                <span class="erro" id="erro_imc"></span>
+            </label>
 
-        <button type="button" onclick="prever()">Resultado</button>
-        <div id="resultado"></div>
-    </form>
+            <label>Histórico Familiar
+                <input type="number" id="historico_familiar" min="0" max="3" step="any">
+                <span class="hint">índice de risco</span>
+                <span class="erro" id="erro_historico_familiar"></span>
+            </label>
+
+            <hr>
+
+            <button type="button" onclick="prever()">Calcular risco</button>
+            <div id="resultado"></div>
+        </form>
+    </div>
 
     <script src="static/script.js"></script>
 </body>

@@ -48,10 +48,13 @@ async function prever() {
 
     const resultado = await response.json();
     const div = document.getElementById("resultado");
+    div.style.display = "block";
 
     if (resultado.resultado === 1) {
+        div.className = "risco-alto";
         div.innerHTML = `⚠️ Alto risco de diabetes — probabilidade: ${(resultado.probabilidade * 100).toFixed(0)}%`;
     } else {
-        div.innerHTML = `✅ Baixo risco de diabetes — probabilidade de risco: ${(resultado.probabilidade * 100).toFixed(0)}%`;
+        div.className = "risco-baixo";
+        div.innerHTML = `✅ Baixo risco de diabetes — probabilidade: ${(resultado.probabilidade * 100).toFixed(0)}%`;
     }
 }

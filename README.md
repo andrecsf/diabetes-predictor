@@ -89,11 +89,11 @@ Recebe os dados clínicos do paciente e retorna o resultado da predição.
 | Campo | Tipo | Intervalo | Descrição |
 |---|---|---|---|
 | `gestacoes` | float | 0 – 20 | Número de gestações |
-| `glicose` | float | 0 – 300 | Concentração de glicose (mg/dL) |
-| `pressao_arterial` | float | 0 – 200 | Pressão arterial diastólica (mmHg) |
-| `espessura_pele` | float | 0 – 100 | Espessura da dobra cutânea do tríceps (mm) |
-| `insulina` | float | 0 – 900 | Insulina sérica 2 horas (µU/mL) |
-| `imc` | float | 0 – 70 | Índice de Massa Corporal |
+| `glicose` | float | 40 – 300 | Concentração de glicose (mg/dL) |
+| `pressao_arterial` | float | 40 – 200 | Pressão arterial diastólica (mmHg) |
+| `espessura_pele` | float | 5 – 100 | Espessura da dobra cutânea do tríceps (mm) |
+| `insulina` | float | 2 – 900 | Insulina sérica 2 horas (µU/mL) |
+| `imc` | float | 15 – 70 | Índice de Massa Corporal |
 | `historico_familiar` | float | 0 – 3 | Função de pedigree de diabetes |
 | `idade` | float | 1 – 120 | Idade em anos |
 
@@ -117,7 +117,7 @@ Recebe os dados clínicos do paciente e retorna o resultado da predição.
 ```json
 {
   "resultado": 1,
-  "probabilidade": 0.84
+  "probabilidade": ~0.84
 }
 ```
 

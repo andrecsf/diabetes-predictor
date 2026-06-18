@@ -18,11 +18,11 @@ model = joblib.load("modelo_diabetes_rf.pkl")  # ajuste o nome se necessário
 
 class DadosPaciente(BaseModel):
     gestacoes: float = Field(..., ge=0, le=20)
-    glicose: float = Field(..., ge=0, le=300)
-    pressao_arterial: float = Field(..., ge=0, le=200)
-    espessura_pele: float = Field(..., ge=0, le=100)
-    insulina: float = Field(..., ge=0, le=900)
-    imc: float = Field(..., ge=0, le=70)
+    glicose: float = Field(..., gt=0, le=300)
+    pressao_arterial: float = Field(..., gt=0, le=200)
+    espessura_pele: float = Field(..., gt=0, le=100)
+    insulina: float = Field(..., gt=0, le=900)
+    imc: float = Field(..., gt=0, le=70)
     historico_familiar: float = Field(..., ge=0, le=3)
     idade: float = Field(..., ge=1, le=120)
 

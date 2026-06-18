@@ -1,11 +1,11 @@
 async function prever() {
     const campos = [
         { id: "gestacoes", min: 0, max: 20 },
-        { id: "glicose", min: 0, max: 300 },
-        { id: "pressao_arterial", min: 0, max: 200 },
-        { id: "espessura_pele", min: 0, max: 100 },
-        { id: "insulina", min: 0, max: 900 },
-        { id: "imc", min: 0, max: 70 },
+        { id: "glicose", min: 0.1, max: 300 },
+        { id: "pressao_arterial", min: 0.1, max: 200 },
+        { id: "espessura_pele", min: 0.1, max: 100 },
+        { id: "insulina", min: 0.1, max: 900 },
+        { id: "imc", min: 0.1, max: 70 },
         { id: "historico_familiar", min: 0, max: 3 },
         { id: "idade", min: 1, max: 120 },
     ];

@@ -10,7 +10,7 @@ Projeto desenvolvido para a disciplina de Desenvolvimento Mobile — SENAC.
 
 | Nome | GitHub |
 |---|---|
-| André Costa | [—](https://github.com/andrecsf) |
+| André Costa | [andrecsf](https://github.com/andrecsf) |
 | Caio Victor | — |
 | Leticia Gabrielle | — |
 | Luciana Borges | — |
